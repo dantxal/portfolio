@@ -1,17 +1,29 @@
 import React from 'react'
 import Head from 'next/head'
 
-import { Container } from '../styles/pages/Home'
+import officePicture from '../assets/office-1200.jpeg'
+import { Container, Content, Splash, OfficePic } from '../styles/pages/Home'
+import Header from '../components/Header'
 
 const Home: React.FC = () => {
   return (
     <Container>
       <Head>
-        <title>Homepage</title>
+        <title>dantxal</title>
       </Head>
 
-      <h1>ReactJS Structure</h1>
-      <p>A ReactJS + Next.js structure made by Rocketseat.</p>
+      <Header />
+
+      <Content>
+        <Splash>
+          <h1>Daniel Teixeira</h1>
+          <h2>
+            Full-stack developer, React enthusiast self-directed and ambitious
+          </h2>
+        </Splash>
+
+        <OfficePic src={officePicture} />
+      </Content>
     </Container>
   )
 }
