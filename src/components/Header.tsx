@@ -1,4 +1,3 @@
-import { Children } from 'react'
 import Link from 'next/link'
 
 import Logo from '../assets/logo.svg'
@@ -10,9 +9,15 @@ export default function Header(): JSX.Element {
     <HeaderContainer>
       <Logo />
       <Navbar>
-        <Link href="/">PORTFOLIO</Link>
-        <Link href="/apps">APPS</Link>
-        <Link href="/blog">BLOG</Link>
+        <Link href="/">
+          <a>PORTFOLIO</a>
+        </Link>
+        <Link href="/apps">
+          <a>APPS</a>
+        </Link>
+        <Link href="/blog">
+          <a>BLOG</a>
+        </Link>
       </Navbar>
     </HeaderContainer>
   )

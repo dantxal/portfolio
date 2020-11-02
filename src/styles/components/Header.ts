@@ -1,25 +1,25 @@
 import styled from 'styled-components'
 
 export const HeaderContainer = styled.div`
+  box-sizing: border-box;
   height: 100px;
   width: 100%;
   max-width: 1200px;
-  padding: 0 28px;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
 `
 export const Navbar = styled.div`
-  width: 320px;
   max-width: 60%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
 
   a {
+    margin-left: 30px;
     text-decoration: none;
-    color: ${props => props.theme.colors.text};
+    color: ${props => props.theme.colors.text1};
+  }
+
+  @media all and (max-width: 600px) {
+    display: none;
   }
 `
