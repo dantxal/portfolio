@@ -7,7 +7,11 @@ import { HeaderContainer, Navbar } from '../styles/components/Header'
 export default function Header(): JSX.Element {
   return (
     <HeaderContainer>
-      <Logo />
+      <Link href="/">
+        <a>
+          <Logo />
+        </a>
+      </Link>
       <Navbar>
         <Link href="/">
           <a>PORTFOLIO</a>
