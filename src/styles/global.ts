@@ -15,6 +15,7 @@ export default createGlobalStyle`
     background: ${props => props.theme.colors.background};
     color: ${props => props.theme.colors.text3};
     font: 400 16px Roboto, sans-serif;
+    line-height: 150%;
   }
 
   h1 {
