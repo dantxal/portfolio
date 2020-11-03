@@ -1,90 +1,71 @@
 import React from 'react'
-import Head from 'next/head'
 
 import officePicture from '../assets/office-1200.jpeg'
+import socialSplash from '../assets/social-splash@1200.png'
+import bibleSplash from '../assets/bible-splash@1200.png'
 import {
-  Container,
-  Content,
   Splash,
   OfficePic,
   About,
   RecentTitle,
   Project
 } from '../styles/pages/Home'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
+import Layout from '../components/Layout'
 
 const Home: React.FC = () => {
   return (
-    <Container>
-      <Head>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta
-          name="description"
-          content="Full-stack developer, React enthusiast self-directed and ambitious"
-        />
-        <title>dantxal</title>
-      </Head>
+    <Layout>
+      <Splash>
+        <h1>Daniel Teixeira</h1>
+        <h2>
+          Full-stack developer, React enthusiast self-directed and ambitious
+        </h2>
+      </Splash>
 
-      <Content>
-        <Header />
-        <Splash>
-          <h1>Daniel Teixeira</h1>
-          <h2>
-            Full-stack developer, React enthusiast self-directed and ambitious
-          </h2>
-        </Splash>
+      <OfficePic src={officePicture} />
 
-        <OfficePic src={officePicture} />
+      <About>
+        <p>
+          I&apos;m a developer that loves working with bleeding edge
+          technologies specially in the React ecosystem andI strive for
+          delivering code that is simple, and yet has great performance.
+        </p>
+        <p>
+          Although I love Typescript, I&apos;m not limited to it. I had some
+          experience with C languages in the past and I&apos;m up to working
+          with whatever technology is best to delivering the solution.
+        </p>
+        <p>
+          Through studying and working with React and Typescript I&apos;ve
+          developed a solid understanding of some advanced concepts such as Data
+          Fetching, DOM Manipulation, Higher Order Functions, Inheritance and
+          the prototype chain.
+        </p>
+      </About>
 
-        <About>
-          <p>
-            I&apos;m a developer that loves working with bleeding edge
-            technologies specially in the React ecosystem.
-          </p>
-          <p>
-            I strive for delivering code that is simple, and yet has great
-            performance.
-          </p>
-          <p>
-            Although I love Typescript, I&apos;m not limited to it. I had some
-            experience with C languages in the past and I&apos;m up to working
-            with whatever technology is best to delivering the solution.
-          </p>
-        </About>
+      <RecentTitle>Recent projects</RecentTitle>
 
-        <RecentTitle>Recent projects</RecentTitle>
+      <Project>
+        <img src={socialSplash} />
+        <h2>Relay Social App</h2>
+        <p>
+          A social network app, with posts and comments. <br />
+          Built with React and Relay on the front-end, for performance and
+          scalability.
+        </p>
+      </Project>
 
-        <Project>
-          <img src={officePicture} alt={officePicture} />
-          <h2>GraphQL Social App</h2>
-          <p>
-            This project was developed to explore the performance of Relay
-            library. It turned out very fast and scalable.
-          </p>
-        </Project>
-
-        <Project>
-          <img src={officePicture} alt={officePicture} />
-          <h2>GraphQL Social App</h2>
-          <p>
-            This project was developed to explore the performance of Relay
-            library. It turned out very fast and scalable.
-          </p>
-        </Project>
-
-        <Project>
-          <img src={officePicture} alt={officePicture} />
-          <h2>GraphQL Social App</h2>
-          <p>
-            This project was developed to explore the performance of Relay
-            library. It turned out very fast and scalable.
-          </p>
-        </Project>
-
-        <Footer />
-      </Content>
-    </Container>
+      <Project>
+        <img src={bibleSplash} />
+        <h2>Free Sacred Bible</h2>
+        <p>
+          A Bible app with no ads or monetization, I plan to open source it
+          soon.
+          <br />
+          This app is currently only available in the brazilian marketplace.
+        </p>
+      </Project>
+    </Layout>
   )
 }
 

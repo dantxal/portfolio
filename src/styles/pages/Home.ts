@@ -1,28 +1,12 @@
 import styled from 'styled-components'
-import splash from '../../assets/splash-1160.png'
 
-export const Container = styled.div`
-  width: 100%;
-  height: 100vh;
-
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-`
-export const Content = styled.div`
-  width: 100%;
-  max-width: 1240px;
-  padding: 0 20px;
-`
 export const Splash = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
 
-  margin-top: 120px;
-  background-image: url(${splash});
-  background-size: auto;
+  margin-top: 85px;
   width: 100%;
   height: 340px;
 
@@ -41,14 +25,19 @@ export const Splash = styled.div`
 `
 
 export const OfficePic = styled.img`
-  margin-top: 100px;
+  margin-top: 135px;
   width: 100%;
 `
 export const About = styled.div`
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 200px;
 
   p {
-    max-width: 520px;
+    max-width: 580px;
+    margin-right: 20px;
     margin-top: 20px;
   }
 `
