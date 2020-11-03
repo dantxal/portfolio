@@ -20,6 +20,8 @@ export const Navbar = styled.div`
   }
 
   @media all and (max-width: 600px) {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
   }
 `

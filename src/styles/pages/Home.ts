@@ -36,9 +36,19 @@ export const About = styled.div`
   height: 200px;
 
   p {
-    max-width: 580px;
+    width: 580px;
     margin-right: 20px;
     margin-top: 20px;
+  }
+
+  @media all and (max-width: 1200px) {
+    flex-wrap: no-wrap;
+    height: auto;
+
+    p {
+      width: 100%;
+      margin-right: 0;
+    }
   }
 `
 export const RecentTitle = styled.h2`

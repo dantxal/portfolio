@@ -24,6 +24,6 @@ export const Wrapper = styled.div`
 `
 
 export const Content = styled.div`
+  min-height: 80vh;
   animation: ${fadeDown} 1s cubic-bezier(1, 0, 0, 1);
-  }
 `
