@@ -37,6 +37,7 @@ export default createGlobalStyle`
 
     h1 {
       font-size: 40px;
+      line-height: 120%;
     }
 
     h2 {

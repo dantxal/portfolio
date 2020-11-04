@@ -23,5 +23,8 @@ export const Navbar = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    a {
+      margin-left: 0;
+    }
   }
 `

@@ -55,6 +55,10 @@ export const RecentTitle = styled.h2`
   margin-top: 40px;
 `
 export const Project = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   margin-top: 40px;
   margin-bottom: 100px;
   width: 100%;
@@ -64,14 +68,17 @@ export const Project = styled.div`
   }
 
   h2 {
-    width: 100%;
-    text-align: center;
     margin-top: 20px;
   }
 
   p {
-    width: 100%;
     text-align: center;
     margin-top: 20px;
+  }
+
+  a {
+    margin-top: 20px;
+    text-decoration: none;
+    color: ${props => props.theme.colors.text1};
   }
 `
