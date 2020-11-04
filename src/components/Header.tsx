@@ -8,7 +8,7 @@ export default function Header(): JSX.Element {
   return (
     <HeaderContainer>
       <Link href="/">
-        <a>
+        <a aria-label="dantxal logo">
           <Logo />
         </a>
       </Link>

@@ -7,7 +7,7 @@ export default function Header(): JSX.Element {
   return (
     <FooterContainer>
       <Link href="/">
-        <a>
+        <a aria-label="dantxal logo">
           <Logo />
         </a>
       </Link>
