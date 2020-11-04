@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 import officePicture from '../assets/office-1200.jpeg'
 import socialSplash from '../assets/social-splash@1200.png'
@@ -22,7 +23,7 @@ const Home: React.FC = () => {
         </h2>
       </Splash>
 
-      <OfficePic src={officePicture} />
+      <OfficePic src={officePicture} width={1200} height={600} />
 
       <About>
         <p>
@@ -46,7 +47,7 @@ const Home: React.FC = () => {
       <RecentTitle>Recent projects</RecentTitle>
 
       <Project>
-        <img src={socialSplash} />
+        <Image src={socialSplash} width={1200} height={600} />
         <h2>Relay Social App</h2>
         <p>
           A social network app, with posts and comments. <br />
@@ -59,7 +60,7 @@ const Home: React.FC = () => {
       </Project>
 
       <Project>
-        <img src={bibleSplash} />
+        <Image src={bibleSplash} width={1200} height={600} />
         <h2>Free Sacred Bible</h2>
         <p>
           A Bible app with no ads or monetization, I plan to open source it

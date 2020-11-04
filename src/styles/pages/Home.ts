@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import Image from 'next/image'
 
 export const Splash = styled.div`
   display: flex;
@@ -24,9 +25,8 @@ export const Splash = styled.div`
   }
 `
 
-export const OfficePic = styled.img`
-  margin-top: 135px;
-  width: 100%;
+export const OfficePic = styled(Image)`
+  margin-top: 150px;
 `
 export const About = styled.div`
   width: 100%;
