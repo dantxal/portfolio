@@ -1,4 +1,4 @@
-import React from 'react'
+import Link from 'next/link'
 
 import officePicture from '../assets/office-1200.jpeg'
 import socialSplash from '../assets/social-splash@1200.png'
@@ -53,6 +53,9 @@ const Home: React.FC = () => {
           Built with React and Relay on the front-end, for performance and
           scalability.
         </p>
+        <Link href="/social">
+          <a>VIEW PROJECT ➤ </a>
+        </Link>
       </Project>
 
       <Project>
@@ -64,6 +67,10 @@ const Home: React.FC = () => {
           <br />
           This app is currently only available in the brazilian marketplace.
         </p>
+
+        <Link href="/bible">
+          <a>VIEW PROJECT ➤ </a>
+        </Link>
       </Project>
     </Layout>
   )
