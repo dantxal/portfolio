@@ -1,9 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import loadable from '@loadable/component'
 
-import officePicture from '../assets/office-1200.jpeg'
-import socialSplash from '../assets/social-splash@1200.png'
-import bibleSplash from '../assets/bible-splash@1200.png'
 import {
   Splash,
   OfficePic,
@@ -11,7 +9,11 @@ import {
   RecentTitle,
   Project
 } from '../styles/pages/Home'
-import Layout from '../components/Layout'
+import officePicture from '../assets/office-1200.jpeg'
+import socialSplash from '../assets/social-splash@1200.png'
+import bibleSplash from '../assets/bible-splash@1200.png'
+
+const Layout = loadable(() => import('../components/Layout'))
 
 const Home: React.FC = () => {
   return (
