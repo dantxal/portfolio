@@ -31,6 +31,14 @@ export default createGlobalStyle`
     color: ${props => props.theme.colors.text2};
   }
 
+  a {
+    text-decoration: none;
+    color: ${props => props.theme.colors.primary};
+    &:hover {
+      color: ${props => props.theme.colors.text2};
+    }
+  }
+
   @media all and (max-width: 600px) {
     body {
     }
