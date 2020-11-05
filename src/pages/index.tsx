@@ -25,7 +25,12 @@ const Home: React.FC = () => {
         </h2>
       </Splash>
 
-      <OfficePic src={officePicture} width={1200} height={600} />
+      <OfficePic
+        src={officePicture}
+        width={1200}
+        height={600}
+        alt="picture of a desk's top with one monitor showing an IDE interface and the other one some white content, to the right there is an open computer case with running hardware inside, there are speakers a keyboard and a cup with some latte drink"
+      />
 
       <About>
         <p>
@@ -49,7 +54,12 @@ const Home: React.FC = () => {
       <RecentTitle>Recent projects</RecentTitle>
 
       <Project>
-        <Image src={socialSplash} width={1200} height={600} />
+        <Image
+          src={socialSplash}
+          width={1200}
+          height={600}
+          alt="banner with the logo of Social App, information about features and a picture of the app. The features listed on the left are React plus Relay, real-time updates, graphql client and server, pagination in the Relay style, infinite scrolling, React Suspense and Error Boundary implementation"
+        />
         <h2>Relay Social App</h2>
         <p>
           A social network app, with posts and comments. <br />
@@ -62,7 +72,12 @@ const Home: React.FC = () => {
       </Project>
 
       <Project>
-        <Image src={bibleSplash} width={1200} height={600} />
+        <Image
+          src={bibleSplash}
+          width={1200}
+          height={600}
+          alt="banner with the logo of Free Sacred Bible, information about features and a picture of the app running on mobile. The features listed on the left are React Native, typescript plus ESLint, real-time interface, stack navigation, splash and screens assets"
+        />
         <h2>Free Sacred Bible</h2>
         <p>
           A Bible app with no ads or monetization, I plan to open source it
