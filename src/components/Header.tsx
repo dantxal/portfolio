@@ -1,6 +1,5 @@
 import Link from 'next/link'
-
-import Logo from '../assets/logo.svg'
+import Image from 'next/image'
 
 import { HeaderContainer, Navbar } from '../styles/components/Header'
 
@@ -9,7 +8,7 @@ export default function Header(): JSX.Element {
     <HeaderContainer>
       <Link href="/">
         <a aria-label="dantxal logo">
-          <Logo />
+          <Image src="/assets/logo.svg" width={136} height={36} />
         </a>
       </Link>
       <Navbar>

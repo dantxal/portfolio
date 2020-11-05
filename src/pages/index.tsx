@@ -9,9 +9,6 @@ import {
   RecentTitle,
   Project
 } from '../styles/pages/Home'
-import officePicture from '../assets/office-1200.jpeg'
-import socialSplash from '../assets/social-splash@1200.png'
-import bibleSplash from '../assets/bible-splash@1200.png'
 
 const Layout = loadable(() => import('../components/Layout'))
 
@@ -26,7 +23,7 @@ const Home: React.FC = () => {
       </Splash>
 
       <OfficePic
-        src={officePicture}
+        src="/assets/office-1200.jpeg"
         width={1200}
         height={600}
         alt="picture of a desk's top with one monitor showing an IDE interface and the other one some white content, to the right there is an open computer case with running hardware inside, there are speakers a keyboard and a cup with some latte drink"
@@ -55,7 +52,7 @@ const Home: React.FC = () => {
 
       <Project>
         <Image
-          src={socialSplash}
+          src="/assets/social-splash@1200.png"
           width={1200}
           height={600}
           alt="banner with the logo of Social App, information about features and a picture of the app. The features listed on the left are React plus Relay, real-time updates, graphql client and server, pagination in the Relay style, infinite scrolling, React Suspense and Error Boundary implementation"
@@ -73,7 +70,7 @@ const Home: React.FC = () => {
 
       <Project>
         <Image
-          src={bibleSplash}
+          src="/assets/bible-splash@1200.png"
           width={1200}
           height={600}
           alt="banner with the logo of Free Sacred Bible, information about features and a picture of the app running on mobile. The features listed on the left are React Native, typescript plus ESLint, real-time interface, stack navigation, splash and screens assets"
