@@ -30,7 +30,7 @@ const Home: React.FC = () => {
       <About>
         <p>
           I&apos;m a developer that loves working with bleeding edge
-          technologies specially in the React ecosystem andI strive for
+          technologies specially in the React ecosystem and I strive for
           delivering code that is simple, and yet has great performance.
         </p>
         <p>
