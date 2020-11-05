@@ -7,7 +7,6 @@ import Document, {
   NextScript
 } from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
-import icon from '../assets/favicon.ico'
 
 export default class MyDocument extends Document {
   static async getInitialProps(
@@ -48,7 +47,7 @@ export default class MyDocument extends Document {
             rel="stylesheet"
           />
 
-          <link rel="icon" href={icon} />
+          <link rel="icon" href="/assets/favicon.ico" />
         </Head>
         <body>
           <Main />
