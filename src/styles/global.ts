@@ -19,15 +19,12 @@ export default createGlobalStyle`
   }
 
   h1 {
-    font-size: 60px;
     font-weight: 500;
     color: ${props => props.theme.colors.text1};
   }
 
   h2 {
-    font-size: 40px;
     font-weight: 500;
-    line-height: 55px;
     color: ${props => props.theme.colors.text2};
   }
 
