@@ -16,12 +16,15 @@ export const Splash = styled.div`
   h1 {
     margin-top: 20px;
     color: ${props => props.theme.colors.text1};
+    font-size: 60px;
   }
 
   h2 {
     max-width: 750px;
     margin-top: 60px;
     color: ${props => props.theme.colors.text2};
+    font-size: 40px;
+    line-height: 55px;
   }
 `
 
