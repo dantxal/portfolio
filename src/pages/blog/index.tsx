@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { GetStaticProps } from 'next'
 import Layout from '../../components/Layout'
 import getPostsMetadata from '../../utils/getPostsMetadata'
+import { ListOfPosts } from '../../styles/pages/BlogHome'
 
 type Props = {
   metadata: string[]
@@ -24,7 +25,7 @@ export default function Blog({ metadata }: Props): JSX.Element {
   })
   return (
     <Layout>
-      <ul>
+      <ListOfPosts>
         {listItems.map((blog, i) => (
           <li key={i}>
             <div>
@@ -34,7 +35,7 @@ export default function Blog({ metadata }: Props): JSX.Element {
             <p>{blog.description}</p>
           </li>
         ))}
-      </ul>
+      </ListOfPosts>
     </Layout>
   )
 }
