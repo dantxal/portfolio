@@ -9,6 +9,11 @@ export const HeaderContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media all and (max-width: 600px) {
+    margin-top: 15px;
+    align-items: flex-start;
+  }
 `
 export const Navbar = styled.div`
   max-width: 60%;
@@ -25,6 +30,9 @@ export const Navbar = styled.div`
     align-items: flex-end;
     a {
       margin-left: 0;
+      & + a {
+        margin-top: 5px;
+      }
     }
   }
 `

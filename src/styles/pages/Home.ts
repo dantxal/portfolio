@@ -8,10 +8,9 @@ export const Splash = styled.div`
   align-items: flex-start;
 
   margin-top: 85px;
+  padding-left: 30px;
   width: 100%;
   height: 340px;
-
-  padding-left: 30px;
 
   h1 {
     margin-top: 20px;
@@ -26,10 +25,17 @@ export const Splash = styled.div`
     font-size: 40px;
     line-height: 55px;
   }
+
+  @media all and (max-width: 1200px) {
+    margin-top: 0;
+    height: auto;
+  }
 `
 
 export const OfficePic = styled(Image)`
-  margin-top: 150px;
+  @media all and (max-width: 1200px) {
+    margin-top: 30px !important;
+  }
 `
 export const About = styled.div`
   width: 100%;

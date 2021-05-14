@@ -18,9 +18,9 @@ export default function Header(): JSX.Element {
         <Link href="/apps">
           <a>APPS</a>
         </Link>
-        <Link href="/blog">
+        {/* <Link href="/blog">
           <a>BLOG</a>
-        </Link>
+        </Link> */}
       </Navbar>
     </HeaderContainer>
   )

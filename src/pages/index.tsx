@@ -50,6 +50,10 @@ const Home: React.FC = () => {
 
       <RecentTitle>Recent projects</RecentTitle>
 
+      {/**
+       * Social App Project
+       */}
+      {/*
       <Project>
         <Image
           src="/assets/social-splash@1200.png"
@@ -64,6 +68,58 @@ const Home: React.FC = () => {
           scalability.
         </p>
         <Link href="/social">
+          <a>VIEW PROJECT ➤ </a>
+        </Link>
+      </Project>
+      */}
+      {/**
+       * Social App Project
+       */}
+
+      <Project>
+        <Image
+          src="/assets/projects/gobarber/web/dashboardWithAvatar.png"
+          width={1200}
+          height={600}
+          alt="example of a page within the project where the user can update their profile"
+        />
+        <h2>GoBarber</h2>
+        <p>
+          An app for users to find a barber they like and schedule a date for
+          the service.
+          <br />
+          Barbers, on the other side, have an admin panel to manage their
+          schedule.
+        </p>
+        <Link href="/gobarber">
+          <a>VIEW PROJECT ➤ </a>
+        </Link>
+      </Project>
+
+      <Project>
+        <div
+          style={{
+            backgroundColor: '#eee',
+            width: '100%',
+            display: 'flex',
+            justifyContent: 'center'
+          }}
+        >
+          <Image
+            src="/assets/projects/meetapp/web/dashboard.png"
+            width={1009}
+            height={600}
+            alt="example of a page within the project where the user can see the scheduled meetups"
+          />
+        </div>
+        <h2>Meetapp</h2>
+        <p>
+          An app for users to find a meetups and sign up for them.
+          <br />
+          Owners of the meetups have an admin panel to manage their owned
+          meetups.
+        </p>
+        <Link href="/meetapp">
           <a>VIEW PROJECT ➤ </a>
         </Link>
       </Project>
