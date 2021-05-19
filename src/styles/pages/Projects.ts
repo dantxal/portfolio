@@ -6,8 +6,11 @@ export const Info = styled.div`
   h1 {
   }
 
+  h2 {
+  }
+
   p {
-    margin-top: 40px;
+    margin: 40px 0 40px 0;
   }
 `
 
@@ -24,4 +27,11 @@ export const Technologies = styled.div`
     align-items: flex-start;
     padding: 0 40px 20px 0;
   }
+`
+
+export const ImageWrapper = styled.div`
+  position: relative;
+  height: 500px;
+
+  margin: 20px 0 10px 0;
 `

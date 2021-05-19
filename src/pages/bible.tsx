@@ -1,6 +1,6 @@
 import Layout from '../components/Layout'
 
-import { Info, Technologies } from '../styles/pages/Social'
+import { Info, Technologies } from '../styles/pages/Projects'
 
 export default function Bible(): JSX.Element {
   return (
