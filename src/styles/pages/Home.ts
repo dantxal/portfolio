@@ -91,8 +91,8 @@ export const Project = styled.div`
 `
 
 export const ProjectLink = styled.a`
-  background-color: #fafafa;
+  background-color: ${props => props.theme.colors.primary};
+  color: #fff !important;
   cursor: pointer;
-  border: 1px solid #ddd;
   padding: 0.25rem 0.5rem;
 `
