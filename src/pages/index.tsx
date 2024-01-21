@@ -1,13 +1,13 @@
-import Link from 'next/link'
-import Image from 'next/image'
 import loadable from '@loadable/component'
+import Image from 'next/image'
+import Link from 'next/link'
 
 import {
-  Splash,
-  OfficePic,
   About,
+  OfficePic,
+  Project,
   RecentTitle,
-  Project
+  Splash
 } from '../styles/pages/Home'
 
 const Layout = loadable(() => import('../components/Layout'))
@@ -49,32 +49,6 @@ const Home: React.FC = () => {
       </About>
 
       <RecentTitle>Recent projects</RecentTitle>
-
-      {/**
-       * Social App Project
-       */}
-      {/*
-      <Project>
-        <Image
-          src="/assets/social-splash@1200.png"
-          width={1200}
-          height={600}
-          alt="banner with the logo of Social App, information about features and a picture of the app. The features listed on the left are React plus Relay, real-time updates, graphql client and server, pagination in the Relay style, infinite scrolling, React Suspense and Error Boundary implementation"
-        />
-        <h2>Relay Social App</h2>
-        <p>
-          A social network app, with posts and comments. <br />
-          Built with React and Relay on the front-end, for performance and
-          scalability.
-        </p>
-        <Link href="/social">
-          <a>VIEW PROJECT ➤ </a>
-        </Link>
-      </Project>
-      */}
-      {/**
-       * Social App Project
-       */}
 
       <Project>
         <Image
