@@ -36,11 +36,6 @@ const Home: React.FC = () => {
           delivering code that is simple, and yet has great performance.
         </p>
         <p>
-          Although I love Typescript, I&apos;m not limited to it. I had some
-          experience with C languages in the past and I&apos;m up to working
-          with whatever technology is best to delivering the solution.
-        </p>
-        <p>
           Through studying and working with React and Typescript I&apos;ve
           developed a solid understanding of some advanced concepts such as Data
           Fetching, DOM Manipulation, Higher Order Functions, Inheritance and
