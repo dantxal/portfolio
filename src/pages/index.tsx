@@ -6,6 +6,7 @@ import {
   About,
   OfficePic,
   Project,
+  ProjectLink,
   RecentTitle,
   Splash
 } from '../styles/pages/Home'
@@ -16,7 +17,7 @@ const Home: React.FC = () => {
   return (
     <Layout>
       <Splash>
-        <h1>Daniel Teixeira</h1>
+        <h1>Daniel Faria</h1>
         <h2>
           Full-stack developer, React enthusiast self-directed and ambitious
         </h2>
@@ -31,28 +32,28 @@ const Home: React.FC = () => {
 
       <About>
         <p>
-          I&apos;m a developer that loves working with bleeding edge
-          technologies specially in the React ecosystem and I strive for
-          delivering code that is simple, and yet has great performance.
+          I&apos;m a developer that loves working with programming specially in
+          the React ecosystem and I strive for delivering code that is simple,
+          and yet has great performance.
         </p>
         <p>
-          Through studying and working with React and Typescript I&apos;ve
-          developed a solid understanding of some advanced concepts such as Data
-          Fetching, DOM Manipulation, Higher Order Functions, Inheritance and
-          the prototype chain.
+          I am the type of person who likes to get problems solved and I am also
+          very communicative.
         </p>
       </About>
 
       <RecentTitle>Recent projects</RecentTitle>
 
       <Project>
+      <Project>
+        <h2>Free Sacred Bible</h2>
+
         <Image
           src="/assets/bible-splash@1200.png"
           width={1200}
           height={600}
-          alt="banner with the logo of Free Sacred Bible, information about features and a picture of the app running on mobile. The features listed on the left are React Native, typescript plus ESLint, real-time interface, stack navigation, splash and screens assets"
+          alt="banner with the logo of Free Sacred Bible, information about features and a picture of the app running on mobile. The features listed on the left are React Native, typescript, ESLint, real-time interface, stack navigation, splash and screens assets"
         />
-        <h2>Free Sacred Bible</h2>
         <p>
           A Bible app with no ads or monetization, I plan to open source it
           soon.
@@ -61,31 +62,34 @@ const Home: React.FC = () => {
         </p>
 
         <Link href="/bible">
-          <a>VIEW PROJECT ➤ </a>
+          <ProjectLink>VIEW PROJECT ➤ </ProjectLink>
         </Link>
       </Project>
 
       <Project>
+        <h2>GoBarber</h2>
+
         <Image
           src="/assets/projects/gobarber/web/dashboardWithAvatar.png"
           width={1200}
           height={600}
           alt="example of a page within the project where the user can update their profile"
         />
-        <h2>GoBarber</h2>
         <p>
-          An app for users to find a barber they like and schedule a date for
-          the service.
+          Web-app, Mobile app and API for users to find a barber they like and
+          schedule a date for the service.
           <br />
           Barbers, on the other side, have an admin panel to manage their
           schedule.
         </p>
         <Link href="/gobarber">
-          <a>VIEW PROJECT ➤ </a>
+          <ProjectLink>VIEW PROJECT ➤ </ProjectLink>
         </Link>
       </Project>
 
       <Project>
+        <h2>Meetapp</h2>
+
         <div
           style={{
             backgroundColor: '#eee',
@@ -101,15 +105,15 @@ const Home: React.FC = () => {
             alt="example of a page within the project where the user can see the scheduled meetups"
           />
         </div>
-        <h2>Meetapp</h2>
         <p>
-          An app for users to find a meetups and sign up for them.
+          Web-app, Mobile app and API for users to find a meetups and sign up
+          for them.
           <br />
           Owners of the meetups have an admin panel to manage their owned
           meetups.
         </p>
         <Link href="/meetapp">
-          <a>VIEW PROJECT ➤ </a>
+          <ProjectLink>VIEW PROJECT ➤ </ProjectLink>
         </Link>
       </Project>
     </Layout>

@@ -1,5 +1,5 @@
-import styled from 'styled-components'
 import Image from 'next/image'
+import styled from 'styled-components'
 
 export const Splash = styled.div`
   display: flex;
@@ -39,13 +39,9 @@ export const OfficePic = styled(Image)`
 `
 export const About = styled.div`
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
   height: 200px;
 
   p {
-    width: 580px;
     margin-right: 20px;
     margin-top: 20px;
   }
@@ -60,7 +56,7 @@ export const About = styled.div`
     }
   }
 `
-export const RecentTitle = styled.h2`
+export const RecentTitle = styled.h1`
   margin-top: 40px;
 `
 export const Project = styled.div`
@@ -77,11 +73,13 @@ export const Project = styled.div`
   }
 
   h2 {
-    margin-top: 20px;
+    width: 100%;
+    margin-bottom: 1.5rem;
   }
 
   p {
-    text-align: center;
+    width: 100%;
+    text-align: start;
     margin-top: 20px;
   }
 
@@ -90,4 +88,11 @@ export const Project = styled.div`
     text-decoration: none;
     color: ${props => props.theme.colors.text1};
   }
+`
+
+export const ProjectLink = styled.a`
+  background-color: #fafafa;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  padding: 0.25rem 0.5rem;
 `
