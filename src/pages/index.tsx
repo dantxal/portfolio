@@ -45,6 +45,43 @@ const Home: React.FC = () => {
       <RecentTitle>Recent projects</RecentTitle>
 
       <Project>
+        <h2>Eldrum: Redtide</h2>
+        <iframe
+          width="1200"
+          height="600"
+          src="https://www.youtube.com/embed/XESBFvpXiKI?rel=0"
+          title="Eldrum: Red Tide - Release Trailer"
+          frameBorder="0"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+        ></iframe>
+        <p>A mobile text-adventure RPG game developed with React Native.</p>
+        <p>
+          Worked with one of the Founders making improvements to the Engine
+          (React Native) and the Editor (React.js + Node.js). Working on a
+          kanban-style board where I would take issues assigned to me, or add
+          better specification and plan issues on the backlog, so those could be
+          approved for me to work on them.
+        </p>
+        <p>
+          The work included improving the performance of the React Native app by
+          profiling the app, reducing re-renders and finding balance between the
+          different threads running in the native app.
+        </p>
+        <p>
+          As well as creating/updating components to new specifications,
+          reworking the entire save system to a more robust solution, adding
+          achievements system, all of that and much more whilst maintaining
+          compatibility with the previous title, &quot;Eldrum: Untold&quot;.
+        </p>
+        <p>
+          Also solved some other issues the team had like the website not
+          working as intended if Javascript was disabled which was a concern
+          related to accessibility.
+        </p>
+        <ProjectLink href="https://eldrum.com/">VISIT WEBSITE</ProjectLink>
+      </Project>
+
       <Project>
         <h2>Free Sacred Bible</h2>
 
