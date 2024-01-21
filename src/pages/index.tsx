@@ -52,6 +52,26 @@ const Home: React.FC = () => {
 
       <Project>
         <Image
+          src="/assets/bible-splash@1200.png"
+          width={1200}
+          height={600}
+          alt="banner with the logo of Free Sacred Bible, information about features and a picture of the app running on mobile. The features listed on the left are React Native, typescript plus ESLint, real-time interface, stack navigation, splash and screens assets"
+        />
+        <h2>Free Sacred Bible</h2>
+        <p>
+          A Bible app with no ads or monetization, I plan to open source it
+          soon.
+          <br />
+          This app is currently only available in the brazilian marketplace.
+        </p>
+
+        <Link href="/bible">
+          <a>VIEW PROJECT ➤ </a>
+        </Link>
+      </Project>
+
+      <Project>
+        <Image
           src="/assets/projects/gobarber/web/dashboardWithAvatar.png"
           width={1200}
           height={600}
@@ -94,26 +114,6 @@ const Home: React.FC = () => {
           meetups.
         </p>
         <Link href="/meetapp">
-          <a>VIEW PROJECT ➤ </a>
-        </Link>
-      </Project>
-
-      <Project>
-        <Image
-          src="/assets/bible-splash@1200.png"
-          width={1200}
-          height={600}
-          alt="banner with the logo of Free Sacred Bible, information about features and a picture of the app running on mobile. The features listed on the left are React Native, typescript plus ESLint, real-time interface, stack navigation, splash and screens assets"
-        />
-        <h2>Free Sacred Bible</h2>
-        <p>
-          A Bible app with no ads or monetization, I plan to open source it
-          soon.
-          <br />
-          This app is currently only available in the brazilian marketplace.
-        </p>
-
-        <Link href="/bible">
           <a>VIEW PROJECT ➤ </a>
         </Link>
       </Project>
