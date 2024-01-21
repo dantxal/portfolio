@@ -58,7 +58,10 @@ const Home: React.FC = () => {
           ></ResponsiveIFrame>
         </ResponsiveIFrameContainer>
 
-        <p>A mobile text-adventure RPG game developed with React Native.</p>
+        <p>
+          A mobile <strong>text-based adventure RPG game</strong> developed with
+          <strong>React Native</strong>.
+        </p>
         <p>
           Worked with one of the Founders making improvements to the Engine
           (React Native) and the Editor (React.js + Node.js). Working on a
