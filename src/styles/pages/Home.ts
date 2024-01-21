@@ -96,3 +96,20 @@ export const ProjectLink = styled.a`
   cursor: pointer;
   padding: 0.25rem 0.5rem;
 `
+
+export const ResponsiveIFrameContainer = styled.div`
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+`
+
+export const ResponsiveIFrame = styled.iframe`
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+`

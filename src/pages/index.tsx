@@ -8,6 +8,8 @@ import {
   Project,
   ProjectLink,
   RecentTitle,
+  ResponsiveIFrame,
+  ResponsiveIFrameContainer,
   Splash
 } from '../styles/pages/Home'
 
@@ -46,15 +48,16 @@ const Home: React.FC = () => {
 
       <Project>
         <h2>Eldrum: Redtide</h2>
-        <iframe
-          width="1200"
-          height="600"
-          src="https://www.youtube.com/embed/XESBFvpXiKI?rel=0"
-          title="Eldrum: Red Tide - Release Trailer"
-          frameBorder="0"
-          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen
-        ></iframe>
+        <ResponsiveIFrameContainer>
+          <ResponsiveIFrame
+            src="https://www.youtube.com/embed/XESBFvpXiKI?rel=0"
+            title="Eldrum: Red Tide - Release Trailer"
+            frameBorder="0"
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          ></ResponsiveIFrame>
+        </ResponsiveIFrameContainer>
+
         <p>A mobile text-adventure RPG game developed with React Native.</p>
         <p>
           Worked with one of the Founders making improvements to the Engine
