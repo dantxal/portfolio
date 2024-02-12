@@ -59,7 +59,7 @@ const Home: React.FC = () => {
         </ResponsiveIFrameContainer>
 
         <p>
-          A mobile <strong>text-based adventure RPG game</strong> developed with
+          A mobile <strong>text-based adventure RPG game</strong> developed with{' '}
           <strong>React Native</strong>.
         </p>
         <p>
